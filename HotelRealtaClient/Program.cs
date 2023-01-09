@@ -33,7 +33,7 @@ namespace HotelRealtaClient // Note: actual namespace depends on the project nam
 
 
 
-            //------------------------------ find updata by id ------------------------------ 
+            //------------------------------ update by id ------------------------------ 
 
             //var updateByid = _HotelRealta.RepositoryManager.PurchaseOrderHeader.UpdatePoheById(
             //                5, "123", 1, 12121, 0, DateTime.Now, "TR", 1, 2, true);
@@ -42,17 +42,14 @@ namespace HotelRealtaClient // Note: actual namespace depends on the project nam
             //Console.WriteLine(updateResult);
 
 
-            //------------------------------ Delete ------------------------------ 
 
+            //------------------------------ updata by Store Porcedure ------------------------------ 
 
+            var updateBySP = _HotelRealta.RepositoryManager.PurchaseOrderHeader.UpdatePoheById(
+                            1007, "1233", 1, 22222, 0, DateTime.Now, "TR", 1, 2, true);
+            var updateResultSP = _HotelRealta.RepositoryManager.PurchaseOrderHeader.FindPoheById(5);
 
-            //------------------------------ find updata by Store Porcedure ------------------------------ 
-
-            //var updateBySP = _HotelRealta.RepositoryManager.PurchaseOrderHeader.UpdatePoheById(
-            //                5, "123", 1, 22222, 0, DateTime.Now, "TR", 1, 2, true);
-            //var updateResultSP = _HotelRealta.RepositoryManager.PurchaseOrderHeader.FindPoheById(5);
-
-            //Console.WriteLine(updateResultSP);
+            Console.WriteLine(updateResultSP);
 
             //------------------------------ Create new ------------------------------
             //var createNewPohe = _HotelRealta.RepositoryManager.PurchaseOrderHeader.CreatePohe
@@ -70,6 +67,7 @@ namespace HotelRealtaClient // Note: actual namespace depends on the project nam
 
             //Console.WriteLine($"New Purchase Order Header: {createNewPohe}");
 
+            //------------------------------ Create new ------------------------------
 
 
 

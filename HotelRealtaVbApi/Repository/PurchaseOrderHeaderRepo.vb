@@ -41,9 +41,9 @@ Public Class PurchaseOrderHeaderRepo
                             .PoheNumber = reader.GetString(1),
                             .PoheStatus = reader.GetByte(2),
                             .PoheOrderDate = reader.GetDateTime(3),
-                            .PoheSubtotal = reader.GetDecimal(4),
+                            .PoheSubtotal = If(reader.IsDBNull(4), 0, reader.GetDecimal(4)),
                             .PoheTax = reader.GetDecimal(5),
-                            .PoheTotalAmount = reader.GetDecimal(6),
+                            .PoheTotalAmount = If(reader.IsDBNull(6), 0, reader.GetDecimal(6)),
                             .PoheRefund = reader.GetDecimal(7),
                             .PoheArrivalDate = reader.GetDateTime(8),
                             .PohePayType = reader.GetString(9),
@@ -84,9 +84,9 @@ Public Class PurchaseOrderHeaderRepo
                         poh.PoheNumber = reader.GetString(1)
                         poh.PoheStatus = reader.GetByte(2)
                         poh.PoheOrderDate = reader.GetDateTime(3)
-                        poh.PoheSubtotal = If(reader.IsDBNull(4), "", reader.GetDecimal(4))
+                        poh.PoheSubtotal = If(reader.IsDBNull(4), "0", reader.GetDecimal(4))
                         poh.PoheTax = reader.GetDecimal(5)
-                        poh.PoheTotalAmount = If(reader.IsDBNull(6), "", reader.GetDecimal(6))
+                        poh.PoheTotalAmount = If(reader.IsDBNull(6), "0", reader.GetDecimal(6))
                         poh.PoheRefund = reader.GetDecimal(7)
                         poh.PoheArrivalDate = reader.GetDateTime(8)
                         poh.PohePayType = reader.GetString(9)
