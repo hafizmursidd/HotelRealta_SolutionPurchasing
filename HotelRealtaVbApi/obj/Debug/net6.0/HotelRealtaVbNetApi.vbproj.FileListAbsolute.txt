@@ -1,0 +1,12 @@
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbApi\bin\Debug\net6.0\HotelRealtaVbNetApi.deps.json
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbApi\bin\Debug\net6.0\HotelRealtaVbNetApi.dll
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbApi\bin\Debug\net6.0\HotelRealtaVbNetApi.pdb
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbApi\obj\Debug\net6.0\HotelRealtaVbNetApi.vbproj.AssemblyReference.cache
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbApi\obj\Debug\net6.0\HotelRealtaVbNetApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbApi\obj\Debug\net6.0\HotelRealtaVbNetApi.AssemblyInfoInputs.cache
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbApi\obj\Debug\net6.0\HotelRealtaVbNetApi.AssemblyInfo.vb
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbApi\obj\Debug\net6.0\HotelRealtaVbNetApi.vbproj.CoreCompileInputs.cache
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbApi\obj\Debug\net6.0\HotelRealtaVbNetApi.dll
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbApi\obj\Debug\net6.0\refint\HotelRealtaVbNetApi.dll
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbApi\obj\Debug\net6.0\HotelRealtaVbNetApi.pdb
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbApi\obj\Debug\net6.0\ref\HotelRealtaVbNetApi.dll

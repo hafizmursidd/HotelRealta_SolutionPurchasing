@@ -1,0 +1,5 @@
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbNetApi\obj\Debug\net6.0\HotelRealtaVbNetApi.vbproj.AssemblyReference.cache
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbNetApi\obj\Debug\net6.0\HotelRealtaVbNetApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbNetApi\obj\Debug\net6.0\HotelRealtaVbNetApi.AssemblyInfoInputs.cache
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbNetApi\obj\Debug\net6.0\HotelRealtaVbNetApi.AssemblyInfo.vb
+C:\Bootcamp\Batch18\SolutionPurchasing\HotelRealtaVbNetApi\obj\Debug\net6.0\HotelRealtaVbNetApi.vbproj.CoreCompileInputs.cache
