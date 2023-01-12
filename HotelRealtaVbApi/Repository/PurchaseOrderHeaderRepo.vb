@@ -6,10 +6,6 @@ Imports HotelRealtaVbNetApi.Repository
 Public Class PurchaseOrderHeaderRepo
     Implements IPurchaseOrderHeaderRepo
 
-
-
-
-
     'dependecy injection
     Private ReadOnly _context As IRepositoryContext
 
@@ -113,8 +109,6 @@ Public Class PurchaseOrderHeaderRepo
             Using cmd As New SqlCommand With {.Connection = conn, .CommandText = stmt}
 
                 cmd.Parameters.AddWithValue("@poheId", id)
-
-
                 Try
                     conn.Open()
                     rowEffect = cmd.ExecuteNonQuery()
@@ -222,8 +216,9 @@ Public Class PurchaseOrderHeaderRepo
                               "VALUES " &
                               "(@Number, @PoheStatus, @PoheTax, " &
                               "@PoheRefund, @PoheArrivalDate, @PohePayType, " &
-                              "@PoheEmpId, @PoheVendorId); " &
-                              "SELECT IDENT_CURRENT('purchasing.purchase_order_header');"
+                              "@PoheEmpId, @PoheVendorId) " &
+                              "SELECT CAST(scope_identity() as int)"
+
         Using conn As New SqlConnection With {.ConnectionString = _context.GetConnectionString}
             Using cmd As New SqlCommand With {.Connection = conn, .CommandText = stmt}
 

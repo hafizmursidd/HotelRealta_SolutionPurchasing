@@ -8,6 +8,8 @@ Namespace Base
         Implements IRepositoryManager
 
         Private _PohRepo As IPurchaseOrderHeaderRepo
+        Private _PodeRepo As IPurchaseOrderDetailRepo
+        Private _StockDetail As IPurchaseStockDetailRepo
 
         Private ReadOnly _repositoryContext As IRepositoryContext
 
@@ -22,6 +24,27 @@ Namespace Base
                 End If
 
                 Return _PohRepo
+            End Get
+        End Property
+
+        Public ReadOnly Property PurchaseOrderDetail As IPurchaseOrderDetailRepo Implements IRepositoryManager.PurchaseOrderDetail
+            Get
+                If _PodeRepo Is Nothing Then
+                    _PodeRepo = New PurchaseOrderDetailRepo(_repositoryContext)
+
+                End If
+
+                Return _PodeRepo
+            End Get
+        End Property
+
+        Public ReadOnly Property PurchaseStockDetail As IPurchaseStockDetailRepo Implements IRepositoryManager.PurchaseStockDetail
+            Get
+                If _StockDetail Is Nothing Then
+                    _StockDetail = New PurchaseStockDetailRepo(_repositoryContext)
+                End If
+
+                Return _StockDetail
             End Get
         End Property
     End Class
